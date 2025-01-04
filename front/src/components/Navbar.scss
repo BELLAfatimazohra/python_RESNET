@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;                  // Utiliser flexbox pour aligner les éléments
+  justify-content: flex-end;      // Aligner les boutons à droite
+  align-items: center;            // Centrer verticalement les éléments
+  margin: 0;                      // Réinitialiser les marges
+  padding: 15px;                  // Espacement intérieur
+ // Ombre pour un effet de profondeur
+  position: sticky;               // Rendre la navbar collante
+  top: 0;                         // Positionner en haut de la page
+  z-index: 1000;                  // Assurer que la navbar est au-dessus des autres éléments
+  background-color: transparent;  // Supprimer le fond de la navbar
+  margin-top: -150px;             
+  margin-left: 900px;             // Positionner la navbar à droite
+}
+
+
+.navbar-button {
+  background-color: #2980b9;      // Couleur de fond des boutons
+  color: white;                   // Couleur du texte
+  border: none;                   // Pas de bordure
+  border-radius: 5px;             // Coins arrondis
+  padding: 10px 20px;             // Espacement intérieur
+  margin-left: 30px;              // Ajouter un espacement entre les boutons
+  cursor: pointer;                // Curseur en main
+  transition: background-color 0.3s ease; // Transition pour l'effet de survol
+
+  &:hover {
+    background-color: #3498db;    // Couleur de fond au survol
+  }
+
+  &:focus {
+    outline: none;                // Pas de contour lors du focus
+  }
+}
